@@ -110,7 +110,7 @@ export function About() {
             <motion.div variants={itemVariants} className="space-y-6">
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold font-heading">
-                  Hello! I'm Henry
+                  Hello! I&apos;m Henry
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                   To secure an entry-level position in a reputable company where I can apply my skills, 
@@ -119,7 +119,7 @@ export function About() {
                   patient safety and satisfaction.
                 </p>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                  I'm highly motivated, adaptable, and eager to learn to deliver quality results for 
+                  I&apos;m highly motivated, adaptable, and eager to learn to deliver quality results for 
                   the organization. My experience includes working as a Bagger at SM MOLINO and as a 
                   Food Service Clerk at Landers, Alabang.
                 </p>

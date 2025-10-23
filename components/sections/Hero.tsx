@@ -47,7 +47,7 @@ export function Hero() {
             transition={{ duration: 0.6 }}
             className="text-5xl sm:text-7xl lg:text-8xl font-bold font-heading"
           >
-            Hi, I'm{' '}
+            Hi, I&apos;m{' '}
             <span className="text-gradient">Henry</span>
           </motion.h1>
 

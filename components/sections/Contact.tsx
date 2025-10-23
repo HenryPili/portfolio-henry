@@ -68,7 +68,7 @@ export function Contact() {
               Get In <span className="text-gradient">Touch</span>
             </h2>
             <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Have a project in mind or just want to chat? I'd love to hear from you!
+              Have a project in mind or just want to chat? I&apos;d love to hear from you!
             </p>
           </motion.div>
 
@@ -76,9 +76,9 @@ export function Contact() {
             {/* Contact Info */}
             <motion.div variants={itemVariants} className="space-y-8">
               <div className="space-y-6">
-                <h3 className="text-2xl font-bold font-heading">Let's work together</h3>
+                <h3 className="text-2xl font-bold font-heading">Let&apos;s work together</h3>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                  I'm always open to discussing new projects, creative ideas, or opportunities
+                  I&apos;m always open to discussing new projects, creative ideas, or opportunities
                   to be part of your vision. Feel free to reach out!
                 </p>
               </div>
@@ -201,7 +201,7 @@ export function Contact() {
                     animate={{ opacity: 1, y: 0 }}
                     className="text-sm text-green-500 text-center"
                   >
-                    Thanks for reaching out! I'll get back to you soon.
+                    Thanks for reaching out! I&apos;ll get back to you soon.
                   </motion.p>
                 )}
               </form>

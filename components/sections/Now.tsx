@@ -63,7 +63,7 @@ export function Now() {
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center space-y-4">
             <h2 className="text-4xl sm:text-5xl font-bold font-heading">
-              What I'm <span className="text-gradient">Doing Now</span>
+              What I&apos;m <span className="text-gradient">Doing Now</span>
             </h2>
             <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               Current projects and learning adventures
