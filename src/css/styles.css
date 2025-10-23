@@ -1,0 +1,183 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background: #f7f9fb;
+    color: #222;
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+    color: #fff;
+    padding: 40px 0 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(30,60,114,0.08);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(30,60,114,0.07);
+    padding: 40px 32px;
+}
+
+h2 {
+    color: #1e3c72;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: #2a5298;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Projects */
+.project {
+    border: 1px solid #e3e8ee;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+    background: #f5f8fa;
+    transition: box-shadow 0.2s;
+}
+
+.project:hover {
+    box-shadow: 0 4px 16px rgba(42,82,152,0.10);
+    border-color: #b3c6e0;
+}
+
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+#contact-form label {
+    font-weight: 500;
+    color: #2a5298;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px 12px;
+    border: 1px solid #b3c6e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f7f9fb;
+    transition: border 0.2s;
+    resize: vertical;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #2a5298;
+    outline: none;
+}
+
+#contact-form button {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(30,60,114,0.08);
+}
+
+#contact-form button:hover {
+    background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px 0;
+    background: #1e3c72;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 40px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 -2px 8px rgba(30,60,114,0.08);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    section {
+        max-width: 98vw;
+        padding: 28px 8vw;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 28px 0 12px 0;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    section {
+        padding: 18px 4vw;
+        margin: 18px 0;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+}

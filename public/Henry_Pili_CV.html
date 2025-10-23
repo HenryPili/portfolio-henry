@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henry Pili - Professional CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 60px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #06b6d4;
+        }
+        
+        .header h1 {
+            font-size: 42px;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .header .title {
+            font-size: 20px;
+            color: #06b6d4;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .contact-info span::before {
+            content: "●";
+            color: #06b6d4;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section-title {
+            font-size: 22px;
+            color: #1a1a1a;
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e0e0e0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .objective {
+            font-size: 15px;
+            color: #444;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 3px solid #06b6d4;
+        }
+        
+        .experience-item h3, .education-item h3 {
+            font-size: 18px;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .experience-item .company, .education-item .school {
+            font-size: 15px;
+            color: #06b6d4;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .experience-item .date, .education-item .date {
+            font-size: 13px;
+            color: #777;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        
+        .experience-item ul, .education-item ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .experience-item li, .education-item li {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #06b6d4;
+        }
+        
+        .skill-category h4 {
+            font-size: 16px;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .skill-category ul {
+            list-style: none;
+        }
+        
+        .skill-category li {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 6px;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .skill-category li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #06b6d4;
+            font-weight: bold;
+        }
+        
+        .strengths {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+        
+        .strength-item {
+            font-size: 14px;
+            color: #555;
+            padding: 10px 15px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 3px solid #06b6d4;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+        }
+        
+        @media print {
+            body {
+                padding: 20px;
+            }
+            
+            .header {
+                margin-bottom: 30px;
+                padding-bottom: 20px;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>HENRY PILI</h1>
+        <div class="title">Web Developer</div>
+        <div class="contact-info">
+            <span>Pilihenry89@gmail.com</span>
+            <span>Bldg 9, Unit 119, Ciudad De Bacoor, Cavite</span>
+            <span>+63 XXX XXX XXXX</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="objective">
+            Highly motivated and adaptable professional seeking an entry-level position in web development 
+            where I can leverage my technical skills and passion for creating engaging digital experiences. 
+            Proven track record of delivering quality results in fast-paced environments, with experience in 
+            customer service and team collaboration. Eager to contribute to organizational success while 
+            continuously developing my professional expertise in modern web technologies.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Work Experience</h2>
+        
+        <div class="experience-item">
+            <h3>Food Service Clerk</h3>
+            <div class="company">Landers Superstore - Alabang</div>
+            <div class="date">Present</div>
+            <ul>
+                <li>Provided exceptional customer service in a high-volume retail environment</li>
+                <li>Maintained food safety standards and ensured quality control</li>
+                <li>Collaborated with team members to ensure efficient operations</li>
+                <li>Demonstrated strong attention to detail and organizational skills</li>
+                <li>Adapted quickly to changing priorities and customer needs</li>
+            </ul>
+        </div>
+        
+        <div class="experience-item">
+            <h3>Bagger</h3>
+            <div class="company">SM Molino</div>
+            <div class="date">Previous Position</div>
+            <ul>
+                <li>Delivered excellent customer service while maintaining efficiency</li>
+                <li>Developed strong interpersonal and communication skills</li>
+                <li>Worked effectively in a team-oriented environment</li>
+                <li>Demonstrated reliability and strong work ethic</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        
+        <div class="education-item">
+            <h3>Senior High School</h3>
+            <div class="school">San Nicholas III</div>
+            <div class="date">2019 - 2020</div>
+        </div>
+        
+        <div class="education-item">
+            <h3>High School</h3>
+            <div class="school">Golden Acres National High School</div>
+            <div class="date">2017 - 2018</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Web Development</h4>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React & Next.js</li>
+                    <li>Responsive Design</li>
+                    <li>Version Control (Git)</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h4>Design & Tools</h4>
+                <ul>
+                    <li>Tailwind CSS</li>
+                    <li>UI/UX Principles</li>
+                    <li>Modern Web Frameworks</li>
+                    <li>Performance Optimization</li>
+                    <li>Cross-browser Compatibility</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Core Competencies</h2>
+        <div class="strengths">
+            <div class="strength-item">✓ Quick Learner & Adaptable</div>
+            <div class="strength-item">✓ Strong Problem-Solving Skills</div>
+            <div class="strength-item">✓ Excellent Team Collaboration</div>
+            <div class="strength-item">✓ Detail-Oriented & Organized</div>
+            <div class="strength-item">✓ Customer Service Excellence</div>
+            <div class="strength-item">✓ Time Management</div>
+            <div class="strength-item">✓ Effective Communication</div>
+            <div class="strength-item">✓ Results-Driven Mindset</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Additional Information</h2>
+        <ul style="margin-left: 20px;">
+            <li style="margin-bottom: 10px; color: #555;">
+                <strong>Languages:</strong> English, Filipino
+            </li>
+            <li style="margin-bottom: 10px; color: #555;">
+                <strong>Availability:</strong> Immediate
+            </li>
+            <li style="margin-bottom: 10px; color: #555;">
+                <strong>Portfolio:</strong> Available upon request
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>References available upon request</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+IMPORTANT: Save Your Photo Here
+================================
+
+Please save your professional photo as: henry-photo.jpg
+
+Steps:
+1. Take the first image you uploaded (your professional photo in suit)
+2. Save it in this folder (public/) with the filename: henry-photo.jpg
+3. The website will automatically use it in the About section
+
+The photo should be:
+- Named exactly: henry-photo.jpg
+- Placed in: public/henry-photo.jpg
+- Format: JPG or JPEG
+- Recommended size: 800x800 pixels or larger (square format works best)
+
+Once saved, refresh your browser to see your photo on the website!

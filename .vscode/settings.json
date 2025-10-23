@@ -1,0 +1,15 @@
+{
+  "tailwindCSS.experimental.classRegex": [],
+  "tailwindCSS.validate": true,
+  "tailwindCSS.lint.cssConflict": "warning",
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "typescript": "typescript",
+    "typescriptreact": "typescriptreact"
+  },
+  "tailwindCSS.experimental.configFile": null,
+  "tailwindCSS.emmetCompletions": false,
+  "tailwindCSS.showPixelEquivalents": false,
+  "tailwindCSS.rootFontSize": 16
+}
