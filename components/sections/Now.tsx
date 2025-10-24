@@ -3,32 +3,32 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { BookOpen, Code, Coffee, Rocket } from 'lucide-react'
+import { Music, Tv, Gamepad2, Film } from 'lucide-react'
 
-const currentActivities = [
+const hobbies = [
   {
-    icon: Rocket,
-    title: 'Building a SaaS Platform',
-    description: 'Working on an AI-powered project management tool with real-time collaboration features.',
-    status: 'In Progress',
+    icon: Music,
+    title: 'Listening to Music',
+    description: 'Exploring different genres and discovering new artists. Music helps me relax and stay creative.',
+    favorite: 'Various Genres',
   },
   {
-    icon: BookOpen,
-    title: 'Learning Web3',
-    description: 'Diving deep into blockchain development, smart contracts, and decentralized applications.',
-    status: 'Learning',
+    icon: Tv,
+    title: 'Watching Anime',
+    description: 'Enjoying captivating storylines and beautiful animation. Always looking for the next great series to binge.',
+    favorite: 'Action & Adventure',
   },
   {
-    icon: Code,
-    title: 'Open Source Contributions',
-    description: 'Contributing to Next.js and other popular open-source projects in the React ecosystem.',
-    status: 'Active',
+    icon: Gamepad2,
+    title: 'Playing Games',
+    description: 'Gaming is my go-to for unwinding. From strategy to action games, I love the challenge and immersion.',
+    favorite: 'Various Platforms',
   },
   {
-    icon: Coffee,
-    title: 'Writing Tech Blog',
-    description: 'Sharing my knowledge through tutorials and articles about modern web development.',
-    status: 'Weekly',
+    icon: Film,
+    title: 'Watching Movies',
+    description: 'Cinematic storytelling at its finest. Whether it\'s blockbusters or indie films, I appreciate great filmmaking.',
+    favorite: 'All Genres',
   },
 ]
 
@@ -63,20 +63,20 @@ export function Now() {
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center space-y-4">
             <h2 className="text-4xl sm:text-5xl font-bold font-heading">
-              What I'm <span className="text-gradient">Doing Now</span>
+              My <span className="text-gradient">Hobbies</span>
             </h2>
             <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Current projects and learning adventures
+              What I love doing in my free time
             </p>
           </motion.div>
 
-          {/* Activities Grid */}
+          {/* Hobbies Grid */}
           <div className="grid md:grid-cols-2 gap-6">
-            {currentActivities.map((activity) => {
-              const Icon = activity.icon
+            {hobbies.map((hobby) => {
+              const Icon = hobby.icon
               return (
                 <motion.div
-                  key={activity.title}
+                  key={hobby.title}
                   variants={itemVariants}
                   whileHover={{ scale: 1.02 }}
                   className="glass rounded-xl p-6 space-y-4 hover:glow-effect transition-all duration-300"
@@ -87,26 +87,26 @@ export function Now() {
                         <Icon className="w-6 h-6 text-accent" />
                       </div>
                       <div className="space-y-2 flex-1">
-                        <h3 className="text-xl font-bold font-heading">{activity.title}</h3>
+                        <h3 className="text-xl font-bold font-heading">{hobby.title}</h3>
                         <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                          {activity.description}
+                          {hobby.description}
                         </p>
                       </div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-                    <span className="text-sm font-medium text-accent">{activity.status}</span>
+                    <div className="w-2 h-2 bg-accent rounded-full" />
+                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">{hobby.favorite}</span>
                   </div>
                 </motion.div>
               )
             })}
           </div>
 
-          {/* Last Updated */}
+          {/* Fun Note */}
           <motion.div variants={itemVariants} className="text-center">
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
+              Life is better with hobbies that bring joy! ✨
             </p>
           </motion.div>
         </motion.div>
