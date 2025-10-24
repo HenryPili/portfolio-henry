@@ -78,14 +78,29 @@ export function Now() {
                 <motion.div
                   key={hobby.title}
                   variants={itemVariants}
-                  whileHover={{ scale: 1.02 }}
-                  className="glass rounded-xl p-6 space-y-4 hover:glow-effect transition-all duration-300"
+                  whileHover={{ 
+                    scale: 1.05,
+                    rotateY: 5,
+                    rotateX: 5,
+                  }}
+                  whileTap={{ scale: 0.95 }}
+                  transition={{ 
+                    type: "spring",
+                    stiffness: 300,
+                    damping: 20
+                  }}
+                  className="glass rounded-xl p-6 space-y-4 hover:glow-effect transition-all duration-300 gradient-border cursor-pointer"
+                  style={{ transformStyle: 'preserve-3d' }}
                 >
                   <div className="flex items-start justify-between">
                     <div className="flex items-start space-x-4">
-                      <div className="p-3 bg-accent/10 rounded-lg">
+                      <motion.div 
+                        className="p-3 bg-accent/10 rounded-lg"
+                        whileHover={{ rotate: 360, scale: 1.1 }}
+                        transition={{ duration: 0.6, type: "spring" }}
+                      >
                         <Icon className="w-6 h-6 text-accent" />
-                      </div>
+                      </motion.div>
                       <div className="space-y-2 flex-1">
                         <h3 className="text-xl font-bold font-heading">{hobby.title}</h3>
                         <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">

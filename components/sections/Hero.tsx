@@ -47,8 +47,28 @@ export function Hero() {
             transition={{ duration: 0.6 }}
             className="text-5xl sm:text-7xl lg:text-8xl font-bold font-heading"
           >
-            Hi, I'm{' '}
-            <span className="text-gradient">Henry</span>
+            <motion.span
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              Hi, I'm{' '}
+            </motion.span>
+            <span className="text-gradient inline-block">
+              <motion.span
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ 
+                  duration: 0.8, 
+                  delay: 0.4,
+                  type: "spring",
+                  stiffness: 200
+                }}
+                className="inline-block"
+              >
+                Henry
+              </motion.span>
+            </span>
           </motion.h1>
 
           {/* Tagline */}
